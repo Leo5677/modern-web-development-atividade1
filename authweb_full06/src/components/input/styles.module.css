@@ -1,0 +1,32 @@
+/* DIV FORMULÁRIO */
+.loginDivInput {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.loginDivInput:hover {
+  scale: 1.1;
+}
+
+.label {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.input {
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.input:hover {
+  border: 2px solid var(--first-color);
+}
+
+.input:focus {
+  outline: none;
+}

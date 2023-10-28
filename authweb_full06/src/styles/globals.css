@@ -1,0 +1,56 @@
+/* FONTE */
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans&family=Hind&family=Pixelify+Sans:wght@400;500;600;700&display=swap");
+
+/* ESTILO PRINCIPAL */
+:root {
+  /* FONTES */
+  --primary-font: "Pixelify Sans", sans-serif;
+  --second-font: "Hind", sans-serif;
+
+  /* CORES */
+  --first-color: #5833a6;
+  --second-color: #8679d9;
+  --third-color: #2e3d59;
+  --fourth-color: #141a26;
+  --fifth-color: #0d0d0d;
+}
+
+/* CORPO */
+body {
+  background-color: var(--fourth-color);
+}
+
+/* ITENS DE TEXTO */
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+label,
+button,
+p,
+a,
+main {
+  font-family: var(--second-font);
+  color: #fff;
+}
+
+button {
+  font-size: 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 10px 30px 10px 30px;
+  background-color: var(--second-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #6d5dd4;
+  scale: 1.1;
+}
+
+button:active {
+  scale: 0.9;
+}

@@ -1,0 +1,28 @@
+.userListContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 15rem;
+  overflow-y: scroll;
+}
+
+.userListItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #FFF;
+  padding: 0.5rem;
+}
+
+.userListItem span {
+  margin-left: 1rem;
+}
+
+.userListItem div button {
+  margin-left: 1rem;
+}

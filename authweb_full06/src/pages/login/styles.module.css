@@ -1,0 +1,95 @@
+/* CONTAINER PRINCIPAL */
+.loginPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  margin-top: 2.5vh;
+}
+
+/* CONTAINER FORMULÁRIO */
+.loginMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TÍTULO */
+.loginMain h2 {
+  margin-bottom: 10rem;
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  opacity: 0;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+  transform: translateY(30px);
+  animation: changeColor 4s linear infinite, fadeIn 1.5s ease-out 0.5s forwards,
+    floatIn 3s linear infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: var(--first-color);
+    box-shadow: 0px 0px 50px 20px var(--first-color);
+    color: #fff;
+  }
+  25% {
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 20px #fff;
+    color: var(--first-color);
+  }
+  50% {
+    background-color: var(--first-color);
+    box-shadow: 0px 0px 50px 20px var(--first-color);
+    color: #fff;
+  }
+  100% {
+    background-color: var(--first-color);
+    box-shadow: 0px 0px 50px 20px var(--first-color);
+    color: #fff;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatIn {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* BOTÃO DE LOGIN */
+.loginButton {
+  font-size: 18px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 10px 30px 10px 30px;
+  background-color: var(--second-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.loginButton:hover {
+  background-color: #6d5dd4;
+  scale: 1.1;
+}
+
+.loginButton:active {
+  scale: 0.9;
+}
